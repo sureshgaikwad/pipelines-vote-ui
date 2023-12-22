@@ -1,11 +1,8 @@
 schemaVersion: 2.2.0
-# apiVersion: 1.0.0
+apiVersion: 1.0.0
 metadata:
   generateName: vote-ui-
   version: 1.0.1
-parent:
-  id: python
-  registryUrl: 'https://registry.devfile.io'
 projects:
   - name: vote-ui-python
     source:
