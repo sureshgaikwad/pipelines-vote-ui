@@ -40,7 +40,7 @@ commands:
       - type: vscode-launch
         referenceContent: |
           {
-            "version": "0.2.0",
+            "version": "2.2.0",
             "configurations": [
               {
                 "name": "Python: Current File",
