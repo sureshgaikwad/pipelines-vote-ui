@@ -1,7 +1,6 @@
 apiVersion: 1.0.0
 metadata:
   generateName: vote-ui-
-  version: 1.0.1
 projects:
   - name: vote-ui-python
     source:
