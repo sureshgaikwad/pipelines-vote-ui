@@ -1,7 +1,6 @@
 # Using official python runtime base image
 FROM image-registry.openshift-image-registry.svc:5000/openshift/python:latest
 
-
 # Install our requirements.txt
 ADD requirements.txt /opt/app-root/src/requirements.txt
 RUN pip install -r requirements.txt
