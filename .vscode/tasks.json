@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "devfile",
+			"command": "pip install --user -r requirements.txt",
+			"workdir": "${PROJECT_SOURCE}",
+			"component": "python",
+			"problemMatcher": [],
+			"label": "devfile: Install Dependencies"
+		}
+	]
+}
