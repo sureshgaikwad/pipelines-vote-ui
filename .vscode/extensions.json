@@ -4,5 +4,7 @@
     "recommendations": [
         "ms-python.python",
         "redhat.fabric8-analytics"
+        "github.copilot"
+        "GitHub.copilot-chat"
     ]
 }
