@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1
 kind: Pipeline
 metadata:
-  name: vote-ui
+  name: prod-vote-ui
 spec:
   params:
   - default: pipelines-vote-ui
@@ -13,7 +13,7 @@ spec:
   - default: master
     name: GIT_REVISION
     type: string
-  - default: quay.io/sureshgaikwad/vote-ui
+  - default: quay.io/sureshgaikwad/prod-vote-ui
     name: IMAGE_NAME
     type: string
   - default: .
@@ -67,7 +67,7 @@ spec:
     - name: NEW_DIGEST
       value: $(tasks.build-and-push.results.IMAGE_DIGEST)
     - name: KUSTOMIZATION_PATH
-      value: environments/dev
+      value: environments/prod
     - name: GIT_REF
       value: $(params.CONFIG_GIT_REVISION)
     runAfter:
