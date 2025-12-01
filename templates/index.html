@@ -9,6 +9,7 @@
     <meta name="author" content="Tutum dev team">
     <link rel='stylesheet' href="{{ url_for('static',filename='stylesheets/style.css') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='stylesheets/custom.css') }}\" />
   </head>
   <body>
     <div id="content-container"> 
@@ -18,6 +19,10 @@
           <button id="a" type="submit" name="vote" class="a" value="a">{{option_a}}</button>
           <button id="b" type="submit" name="vote" class="b" value="b">{{option_b}}</button>
         </form>
+          <div id=\"tip\">
+          <div id=\"tip\" class=\"text-muted\" style=\"margin-bottom: 20px;\">"
+          (Tip: you can change your vote)
+        </div>
         <div id="tip">
           (Tip: you can change your vote)
         </div>
@@ -53,3 +58,14 @@
     {% endif %}
   </body>
 </html>
+
+"<!-- ... existing head content ... -->
+
+<!-- ... existing remaining head content ... -->
+
+<!-- ... existing body content ... -->
+          </form>
+          //  <div id=\"tip\">
+          <div id=\"tip\" class=\"text-muted\" style=\"margin-bottom: 20px;\">"
+          (Tip: you can change your vote)
+        </div>
