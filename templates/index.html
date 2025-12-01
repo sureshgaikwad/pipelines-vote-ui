@@ -7,8 +7,9 @@
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <meta name="keywords" content="docker-compose, docker, stack">
     <meta name="author" content="Tutum dev team">
+    <link rel='stylesheet' href="{{ url_for('static',filename='stylesheets/style.css') }}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/custom.css') }}" />
+    <link rel=\"stylesheet\" href=\"{{ url_for('static', filename='stylesheets/custom.css') }}\" />
   </head>
   <body>
     <div id="content-container"> 
@@ -57,3 +58,14 @@
     {% endif %}
   </body>
 </html>
+
+"<!-- ... existing head content ... -->
+
+<!-- ... existing remaining head content ... -->
+
+<!-- ... existing body content ... -->
+          </form>
+          //  <div id=\"tip\">
+          <div id=\"tip\" class=\"text-muted\" style=\"margin-bottom: 20px;\">"
+          (Tip: you can change your vote)
+        </div>
