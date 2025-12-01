@@ -26,6 +26,7 @@ def hello():
         vote = request.form['vote']
         data = json.dumps({'voter_id': voter_id, 'vote': vote})
         requests.post(url=rest_endpoint + "/vote", data=data)
+        
 
     resp = make_response(render_template(
         'index.html',
